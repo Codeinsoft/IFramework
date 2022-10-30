@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.1.30" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cache\IFramework.Infrastructure.Transversal.Cache.csproj" />
+    <ProjectReference Include="..\IFramework.Infrastructure.Transversal.Cache.Redis.Config\IFramework.Infrastructure.Transversal.Cache.Redis.Config.csproj" />
+  </ItemGroup>
+
+</Project>

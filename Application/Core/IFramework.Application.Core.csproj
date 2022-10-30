@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Description>IFramework alt yapısındaki genericservice vb. yapıların bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+    <Version>1.0.4</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Core\IFramework.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Aspect\Cache\Cache\IFramework.Infrastructure.Transversal.Cache.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Aspect\Authorization\IFramework.Infrastructure.Transversal.Aspect.Authorization\IFramework.Infrastructure.Transversal.Aspect.Authorization.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Aspect\UnitOfWork\IFramework.Infrastructure.Transversal.Aspect.UnitOfWork\IFramework.Infrastructure.Transversal.Aspect.UnitOfWork.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Aspect\Validation\IFramework.Infra.Transversal.Validation\IFramework.Infra.Transversal.Validation.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\IoC\CastleWindsor\IoCResolver\IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Logger\Logger\IFramework.Infrastructure.Transversal.Logger.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Mapper\Mapper\IFramework.Infrastructure.Transversal.Map.csproj" />
+    <ProjectReference Include="..\Contract\Core\IFramework.Application.Contract.Core.csproj" />
+  </ItemGroup>
+
+</Project>

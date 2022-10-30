@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  iframework.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "8000:80"
+      - "8443:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+    networks:
+      mynetwork:
+        aliases:
+          - web1.iframework.com
+
+  
+  mssql-server-linux:
+    image: microsoft/mssql-server-linux:2017-latest
+    volumes:
+      - ./data/mssql:/var/opt/mssql/data
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=My_pass$$
+    ports:
+      - "1433:1433"
+    networks:
+      mynetwork:
+        aliases:
+          - db1.iframework.com
+
+  iframework.redis:
+    ports:
+      - "6379:6379"
+
+volumes:
+  mssql-server-linux-data: 
+  
+networks:
+  mynetwork:
+    driver: bridge

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Application\Contract\Core\IFramework.Application.Contract.Core.csproj" />
+    <ProjectReference Include="..\..\..\IoC\CastleWindsor\IoCResolver\IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+</Project>

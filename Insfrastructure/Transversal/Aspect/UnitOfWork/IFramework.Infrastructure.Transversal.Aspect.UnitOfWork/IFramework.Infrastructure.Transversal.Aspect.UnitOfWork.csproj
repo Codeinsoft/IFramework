@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Persistence\EFCore\IFramework.Infrastructure.Persistence.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

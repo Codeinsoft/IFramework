@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Description>IFramework alt yapısındaki authorization gibi base yapıların data transfer object'lerinin bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+    <Version>1.0.6</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\IFramework.Application.Contract.Core.csproj" />
+  </ItemGroup>
+
+</Project>

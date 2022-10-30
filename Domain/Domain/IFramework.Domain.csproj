@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Description>IFramework alt yapısının domain katmanındaki user,log gibi yapılarının bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+    <Version>1.0.4</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Contract\Core\IFramework.Application.Contract.Core.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\IoC\CastleWindsor\IoCResolver\IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Resource\IFramework.Infrastructure.Transversal.Resources.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Utility\IFramework.Infrastructure.Utility.csproj" />
+    <ProjectReference Include="..\Core\IFramework.Domain.Core.csproj" />
+  </ItemGroup>
+  
+</Project>

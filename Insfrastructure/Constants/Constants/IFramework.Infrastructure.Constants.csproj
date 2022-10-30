@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>IFramework alt yapısındaki constants değerlerinin tutulduğu pakettir.</Description>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Copyright>IFramework</Copyright>
+  </PropertyGroup>
+
+</Project>

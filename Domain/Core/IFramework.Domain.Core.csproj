@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Description>IFramework alt yapısının domain katmanının core yapılarının bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver</AssemblyName>
+    <RootNamespace>IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver</RootNamespace>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="Castle.Windsor" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>

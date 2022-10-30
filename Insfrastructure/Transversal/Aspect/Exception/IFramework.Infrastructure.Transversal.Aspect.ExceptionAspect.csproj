@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>IFramework.Infrastructure.Transversal.Aspect.ExceptionAspect</AssemblyName>
+    <RootNamespace>IFramework.Infrastructure.Transversal.Aspect.ExceptionAspect</RootNamespace>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Application\Contract\Core\IFramework.Application.Contract.Core.csproj" />
+    <ProjectReference Include="..\..\IoC\CastleWindsor\IoCResolver\IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver.csproj" />
+    <ProjectReference Include="..\..\Logger\Logger\IFramework.Infrastructure.Transversal.Logger.csproj" />
+    <ProjectReference Include="..\..\Utility\IFramework.Infrastructure.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

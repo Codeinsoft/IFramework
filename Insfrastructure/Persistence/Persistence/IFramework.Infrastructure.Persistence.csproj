@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Description>IFramework alt yapısı içinde UserRepository vb. repository'lerin bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+    <Version>1.0.7</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFCore\IFramework.Infrastructure.Persistence.EFCore.csproj" />
+    <ProjectReference Include="..\FNibernate\IFramework.Infrastructure.Persistence.FNhibernate.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCInstaller</AssemblyName>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="5.0.1" />
+    <PackageReference Include="FluentValidation" Version="8.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Application\Application\IFramework.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Application\Contract\Contract\IFramework.Application.Contract.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Application\Core\IFramework.Application.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Domain\Core\IFramework.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\WebApi\Core\IFramework.Api.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\Persistence\EFCore\IFramework.Infrastructure.Persistence.EFCore.csproj" />
+    <ProjectReference Include="..\..\..\..\Persistence\Persistence\IFramework.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\Cache\Cache\IFramework.Infrastructure.Transversal.Cache.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\Cache\Redis\IFramework.Infrastructure.Transversal.Cache.Redis.Service\IFramework.Infrastructure.Transversal.Cache.Redis.Service.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\Authorization\IFramework.Infrastructure.Transversal.Aspect.Authorization\IFramework.Infrastructure.Transversal.Aspect.Authorization.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\Exception\IFramework.Infrastructure.Transversal.Aspect.ExceptionAspect.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\Validation\Fluent\IFramework.Infra.Transversal.Validation.Fluent\IFramework.Infra.Transversal.Validation.Fluent.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\Logger\IFramework.Infrastructure.Transversal.Aspect.Log.csproj" />
+    <ProjectReference Include="..\..\..\Aspect\UnitOfWork\IFramework.Infrastructure.Transversal.Aspect.UnitOfWork\IFramework.Infrastructure.Transversal.Aspect.UnitOfWork.csproj" />
+    <ProjectReference Include="..\..\..\Logger\NLog\IFramework.Infra.Transversal.Log.NLog.csproj" />
+    <ProjectReference Include="..\..\..\Mapper\AutoMapper\IFramework.Infrastructure.Transversal.Mapper.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\..\Mapper\Mapper\IFramework.Infrastructure.Transversal.Map.csproj" />
+    <ProjectReference Include="..\..\..\Utility\IFramework.Infrastructure.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

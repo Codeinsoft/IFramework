@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>IFramework alt yapısında fluent nhibernate orm yapısı kullanılarak generic repository, context ve unit of work yapılarının bulunduğu pakettir.</Description>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Copyright>IFramework</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\Core\IFramework.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\..\Domain\Domain\IFramework.Domain.csproj" />
+    <ProjectReference Include="..\..\Transversal\Resource\IFramework.Infrastructure.Transversal.Resources.csproj" />
+    <ProjectReference Include="..\..\Transversal\Utility\IFramework.Infrastructure.Utility.csproj" />
+    <ProjectReference Include="..\UnitOfWork\IFramework.Infrastructure.Persistence.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>

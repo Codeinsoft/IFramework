@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>IFramework.Infrastructure.Transversal.Cache</AssemblyName>
+    <RootNamespace>IFramework.Infrastructure.Transversal.Cache</RootNamespace>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IoC\CastleWindsor\IoCResolver\IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver.csproj" />
+    <ProjectReference Include="..\..\..\Utility\IFramework.Infrastructure.Utility.csproj" />
+    <ProjectReference Include="..\..\Logger\IFramework.Infrastructure.Transversal.Aspect.Log.csproj" />
+  </ItemGroup>
+
+</Project>

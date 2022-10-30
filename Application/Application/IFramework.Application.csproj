@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Product>IFramework</Product>
+    <Description>IFramework alt yapısının user ve authorization servislerinin bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+    <Version>1.0.8</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Domain\IFramework.Domain.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Aspect\Validation\IFramework.Infra.Transversal.Validation\IFramework.Infra.Transversal.Validation.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Aspect\UnitOfWork\IFramework.Infrastructure.Transversal.Aspect.UnitOfWork\IFramework.Infrastructure.Transversal.Aspect.UnitOfWork.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\IoC\CastleWindsor\IoCResolver\IFramework.Infrastructure.Transversal.IoC.CastleWindsor.IoCResolver.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Mapper\Mapper\IFramework.Infrastructure.Transversal.Map.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\Transversal\Utility\IFramework.Infrastructure.Utility.csproj" />
+    <ProjectReference Include="..\Contract\Contract\IFramework.Application.Contract.csproj" />
+    <ProjectReference Include="..\Core\IFramework.Application.Core.csproj" />
+  </ItemGroup>
+
+</Project>

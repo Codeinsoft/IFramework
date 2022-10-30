@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+    <Company>Caner BAKİ &amp; Arda ŞENTUNALI</Company>
+    <Description>IFramework alt yapısında unit of work kullanımı için helper'ların bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+  </PropertyGroup>
+
+</Project>

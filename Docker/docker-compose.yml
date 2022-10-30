@@ -1,0 +1,106 @@
+version: '3.4'
+
+services:
+  iframework.webapi:
+    image: ${DOCKER_REGISTRY-}iframeworkwebapi
+    build:
+      context: .
+      dockerfile: ../WebApi/WebApiTest/Dockerfile
+    ports:
+      - "8000:80"
+      - "8443:443"
+    networks:
+      iframework-network:
+        aliases:
+          - web1.iframework.com
+    depends_on:
+      - iframework.redis
+
+  mssql-server-linux:
+    image: microsoft/mssql-server-linux:latest
+    volumes:
+      - ./data/mssql:/var/opt/mssql/data
+    environment:
+      - ACCEPT_EULA="Y"
+      - SA_PASSWORD=My_pass$$
+    ports:
+      - "1433:1433"
+    networks:
+      iframework-network:
+        aliases:
+          - db1.iframework.com
+
+
+  iframework.redis:
+    image: redis
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+        - iframework.redis.volume:/data/redis
+    restart: always
+    networks:
+      iframework-network:
+        aliases:
+          - db1.iframework.com
+    
+    
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.0.1
+    volumes:
+      - ./elk/elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      iframework-network:
+        aliases:
+          - elasticsearch.iframework.com
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+  logstash:
+    image: docker.elastic.co/logstash/logstash:6.0.1
+    command: -f /etc/logstash/conf.d/
+    volumes:
+      - ./elk/logstash/:/etc/logstash/conf.d/
+    ports:
+      - "5000:5000"
+    networks:
+      iframework-network:
+        aliases:
+          - logstash.iframework.com
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    depends_on:
+      - elasticsearch
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.0.1
+    volumes:
+      - ./elk/kibana/:/usr/share/kibana/config/
+    ports:
+      - "5601:5601"
+    networks:
+      iframework-network:
+        aliases:
+          - kibana.iframework.com
+    depends_on:
+      - elasticsearch
+  
+  sonarqube:
+    image: sonarqube
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./sonarqube/data/:/opt/sonarqube/data/
+    networks:
+      iframework-network:
+        aliases:
+          - sonarqube.iframework.com
+
+volumes:
+
+  mssql-server-linux-data: 
+
+  iframework.redis.volume:
+  
+networks:
+  iframework-network:
+    driver: bridge

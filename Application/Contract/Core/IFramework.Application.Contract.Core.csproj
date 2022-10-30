@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Caner BAKİ &amp; Arda ŞENTUNALI</Authors>
+    <Product>IFramework</Product>
+    <Description>IFramework alt yapısının ApplicationService katmanının base Data Transfer Object nesnelerinin bulunduğu pakettir.</Description>
+    <Copyright>IFramework</Copyright>
+  </PropertyGroup>
+
+</Project>
